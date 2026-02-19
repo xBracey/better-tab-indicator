@@ -1,7 +1,7 @@
 @media (-moz-bool-pref: "zen.tabs.vertical") {
   /* Tab Borders Based on Preference */
   .tabbrowser-tab:not([pinned]):is([multiselected="true"], [selected]) {
-    &:has(#uc-tabs[uc-tabs-preferred_color="primary"]) .tab-background {
+    /* &:has(#uc-tabs[uc-tabs-preferred_color="primary"]) .tab-background {
       border: 2px solid var(--zen-colors-primary) !important;
     }
     &:has(#uc-tabs[uc-tabs-preferred_color="secondary"]) .tab-background {
@@ -15,12 +15,13 @@
     }
     &:has(#uc-tabs[uc-tabs-preferred_color="custom"]) .tab-background {
       @media (prefers-color-scheme: light) {
-        border: 2px solid var(--uc-tabs-preferred_color, #000000) !important; /* Fallback to black */
+        border: 2px solid var(--uc-tabs-preferred_color, #000000) !important;
       }
       @media (prefers-color-scheme: dark) {
-        border: 2px solid var(--uc-tabs-preferred_color, #ffffff) !important; /* Fallback to white */
+        border: 2px solid var(--uc-tabs-preferred_color, #ffffff) !important;
       }
-    }
+    } */
+    border: 2px solid var(--zen-colors-border) !important;
   }
 
   /* Background Modification for Selected Tab */
